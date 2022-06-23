@@ -1,0 +1,449 @@
+/* import google font */
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+/* Reset CSS */
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+ line-height:1;
+ font-size:100%;
+ font-family:'Open Sans', sans-serif;
+ color:#5a5a5a;
+}
+#container {
+ width: 980px;
+ margin: 0 auto;
+ box-shadow: 0 0 1em #cccccc;
+}
+/* header */
+header {
+ padding: 20px;
+}
+header h1 {
+ margin: 20px 10px;
+ color: #b5b5b5;
+}
+/* navigasi */
+nav {
+    display: block;
+    background-color: #1f5faa;
+   }
+   nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+   }
+   nav a.active,
+   nav a:hover {
+    background-color: #2b83ea;
+   }
+   /* Hero Panel */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+   }
+   #hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+   }
+   #hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+   }
+
+   /* main content */
+#wrapper {
+    margin: 0;
+   }
+   #main {
+    float: left;
+    width: 640px;
+    padding: 20px;
+   }
+   /* sidebar area */
+   #sidebar {
+    float: left;
+    width: 260px;
+    padding: 20px;
+   }
+/* widget */
+.widget-box {
+    border:1px solid #eee;
+    margin-bottom:20px;
+   }
+   .widget-box .title {
+    padding:10px 16px;
+    background-color:#428bca;
+    color:#fff;
+   }
+   .widget-box ul {
+    list-style-type:none;
+   }
+   .widget-box li {
+    border-bottom:1px solid #eee;
+}
+.widget-box li a {
+ padding:10px 16px;
+ color:#333;
+ display:block;
+ text-decoration:none;
+}
+.widget-box li:hover a {
+ background-color:#eee;
+}
+.widget-box p {
+ padding:15px;
+ line-height:25px;
+}      
+/* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
+   }  
+   /* box */
+.box {
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
+   }
+   .box h3 {
+    margin: 15px 0;
+   }
+   .box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+   }
+   box img {
+    border: 0;
+    vertical-align: middle;
+   }
+   .image-circle {
+    border-radius: 50%;
+   }
+   .row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+   }
+   .row:after, .row:before,
+   .entry:after, .entry:before {
+    content:'';
+    display:table;
+   }
+   .row:after,
+   .entry:after {
+    clear:both;
+   }
+   
+   .divider {
+    border:0;
+    border-top:1px solid #eeeeee;
+    margin:40px 0;
+   }
+   /* entry */
+   .entry {
+    margin: 15px 0;
+   }
+   .entry h2 {
+    margin-bottom: 20px;
+}
+.entry p {
+ line-height: 25px;
+}
+.entry img {
+ float: left;
+ border-radius: 5px;
+ margin-right: 15px;
+}
+.entry .right-img {
+    float: right;
+}  
+
+
+/* Admin  */
+
+.table{
+font-family: sans-serif;
+color: #232323;
+border-collapse: collapse;
+/* margin-top: 20px;
+margin-left: 100px;
+margin-bottom: 20px; */
+margin: 20px 50px;
+width: 90%;
+}
+
+.table th{
+background-color: #1f548c;
+color:rgb(255, 255, 255);
+}
+
+.table, th, td{
+border: 1px solid rgb(255, 255, 255);
+padding: 8px 20px;
+}
+
+.table .btn{
+    margin-right: 10px;
+}
+
+.btn:link,
+.btn:visited{
+    background-color: rgb(107, 109, 107);
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: rgb(37, 42, 42);
+}
+
+.btn-danger:link,
+.btn-danger:visited{
+    background-color: rgb(213, 42, 42);
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.btn-danger:hover{
+    background-color: rgb(183, 7, 7);
+}
+
+/* From_ADD */
+
+.add{
+    margin: 20px 50px;
+}
+
+.add .title{
+    padding-bottom: 20px;
+}
+
+.add input[type=text], textarea{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    padding-left: 5px;
+    font-size: 11pt;
+}
+
+
+.add input[type=submit]{
+    padding: 10px 0px;
+    width: 50px;
+    border: none;
+    color: white;
+    background-color: #2b83ea;
+}
+
+.add input[type=submit]:hover{
+    background-color: #0e55a0;
+    cursor: pointer;
+}
+
+
+/* About */
+
+
+.about1 .konten{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.konten img{
+    width: 250px;
+    margin-left: 40px;
+    border-radius: 50%;
+    /* box-shadow: 5px 0px 25px rgb(34,34,35); */
+}
+.konten h1{
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.konten h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+/* Kontak */
+
+.kontak{
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+.contak{
+    width: 200%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contak .from-contak{
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+.from-contak h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.from-contak .from-grup input{
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.from-contak hr{
+    margin-bottom: 10px;
+}
+
+.from-contak .from-grup textarea{
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.kirim-kontak{
+    width: 100%;
+    background-color: rgb(30, 0, 255);
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.kirim-kontak:hover{
+    background-color: #0e55a0;
+}
+
+/* Box Kontak */
+
+
+.kontak-box img{
+    width: 130px;
+    margin-left: 40px;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.kontak-box h2{
+    padding-bottom: -190px;
+}
+
+
+/* Bagian Artikel Index.php */
+
+.artikel_index h2,a{
+    text-decoration: none;
+    color: black;
+}
+
+.artikel_index h2,a:hover{
+    color: #0e55a0;
+}
+
+
+/* Login */
+
+.login-wrapper{
+    width: 50%;
+    height: 400px;
+    background-color: #eee8e8;
+    /* b5b5b5 */
+    margin: 70px 300px;
+}
+
+.login-wrapper h1{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+
+.login-wrapper hr{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.login-wrapper form{
+    width: 100%;
+    margin: 30px 30px;
+}
+
+.login-wrapper .mb-3{
+    padding: 20px 0px;
+}
+
+.login-wrapper .alert{
+    padding: 0px 30px;
+    padding-bottom: 30px;
+}
+
+.login-wrapper input{
+    width: 90%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-wrapper .btn{
+    margin-top: 20px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(50, 115, 212);
+    border: none;
+    font-size: 12pt;
+    color: white;
+}
+
+.login-wrapper .btn:hover{
+    background-color: #2466ac;
+    cursor: pointer;
+}
+
+.login-wrapper a{
+    color:white;
+}
+
